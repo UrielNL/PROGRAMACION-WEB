@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Formularios HTML</title>
+    <meta name="author" content="NoiegaLabraAngelUriel">
+</head>
+<body>
+    <h1>Listas y Formularios</h1>
+     <div>
+    <ul>
+        <li>Leche</li>
+        <li>Carne</li>
+        <li>Pan</li>
+        <li>Jamon</li>
+        <li>Papel</li>
+    </ul>
+    <h3>Listas Ordenadas</h3>
+    <ol type="i" start="10" reversed>
+         <li>Decimo</li>
+         <li>NOveno</li>
+         <li>Octavo</li>
+         <li>Septimo</li>
+         <li>Sexto</li>
+    </ol>
+    <h3>Listas de Definiciones</h3>
+    <ol>
+        <dt>HTML</dt>
+        <dd>Lenguaje de mercado de hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Hoa de Estilos de Cascada (Cascading Style Sheets)</dd>
+        <dt>35</dt>
+        <dd>JavaScript</dd>
+
+    </ol>
+    <h3>Listas anidadas</h3>
+        <p>Desarrollo web</p>
+        <ul>
+            <li>Front-End</li>
+            <li>Back-End</li>
+                <ol type="A">
+                    <li>ModeJS</li>
+                    <li>MySQL</li>
+                    <li>ArchiLinux</li>
+                </ol>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>Formularios </h2>
+        <h3>Formularios de Inicio de sesion</h3>
+         <form action="/TAREA6/inicio_sesion.html" method="get">
+            <label for="">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contrasena</label>
+            <input type="password" name="password" id="password" placeholder="Tu contraseña debe contener numeros y letras papi" required>
+            <br>
+            <button type="submit">Enviar</button>
+         </form>
+         <h3>Formulario con campo de entrada de varias lineas</h3>
+        <form action="validar.js" method="post">
+             <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required placeholder="Elije un nombre">
+            <br>
+            <label for="opinion">Comentario:</label>
+            <textarea name="opinion" id="opinion" placeholder="tu opinion es muy importante" required rows="5" cols="40s"></textarea>
+            <br>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+        <hr>
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form action="/opciones" method="post">
+            <label for="bebidas">Bebidas</label>
+            <select name="bebidas" id="bebidas">
+                <option value="coca_cola">Coca-cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="boing">Boing</option>
+                <option value="Te">Té</option>
+                <option value="jarrito" selected>Jarrito</option>
+            </select>
+                            <br>
+                <label for="postres">postres</label>
+                <select name="postres" id="postres">
+                    <option value="" disabled selected>Selecciona un postre</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+                <option value="pay-limon">Pay de limon</option>
+                <option value="pay-fresa">Pay de fresa</option>
+                <option value="pasteñ">Pastel</option>
+                </select>
+                <br>
+                <input type="submit">
+        </form>
+        <form action="">
+            <h3>Formulario con distintos campos de datos</h3>
+            <form action="datos.php" method="post">
+                <fieldset>
+                    <legend>Nombre completo</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="ap-paterno">Apellido paterno</label>
+                    <input type="text" id="ap-paterno" name="ap-paterno" required>
+                    <br>
+                    <label for="nombre">Apellido materno</label>
+                    <input type="text" id="ap-materno" name="ap-materno" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <label for="fecha_nacimiento">Fecha de nacimeinto</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    <br>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" required id="edad" min="18" max="90" >
+                    <br>
+                    <label for="num_cuenta">Numero de cuenta</label>
+                    <input type="text" name="num_cuenta" id="num_cuenta" required minlength="9" maxlength="9" required pattern="[0-9]{9}">
+                    <br>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                 
+                      <fieldset>
+                 <legend>Datos personales</legend>
+                           <label for="calle">calle</label>
+                              <input type="text" id="calle" name="calle" required>
+    <br>
+                         <label for="colonia">colonia</label>
+                    <input type="text" name="colonia" required id="colonia">
+    <br>
+                    <label for="numero_calle">Numero de calle</label>
+                        <input type="number" name="num_calle" id="num_calle" required>
+  </fieldset>
+                    <button type="submit">Enviar</button>
+            </form>
+        </form>
+        
+        </div>
+
+</body>
+</html>
