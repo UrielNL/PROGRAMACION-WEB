@@ -1,0 +1,20 @@
+/* Estilos para un selector de elemento */
+h2{
+   color: darkred;
+}
+/* Esilospara un selector de una clase */
+.color-h2{
+    color: darkmagenta;
+}
+/* Estilos para un selector de un identificador*/
+#color-h1{
+    color: darkgoldenrod;
+}
+
+.color-estilosinternos{
+    color: gray;
+}
+
+#bg-header{
+    background-color: black;
+}
