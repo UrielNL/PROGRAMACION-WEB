@@ -1,0 +1,37 @@
+
+.fondo1 {
+    /*bg-image permite agregar imagenes como fondo de un elemento y también se pueden agregar gradientes*/
+    background-image: linear-gradient(to top, rgba(0, 255, 255, 0.404), rgba(128, 128, 128, 0.404)), url(../imagenes/images.jpeg);
+
+    /*Backgound-siza(cover, contain, width(px)-heigth(px))
+    Especifíca el tamaño de la imagen de fondo*/
+    background-size: cover;
+
+    /*Background-repeat (repeat, no repeat, repeat-x, repeat-y)
+    Aplica cuando la imagen es más pequeña que su contenedor*/
+    background-repeat: no-repeat;
+
+    /*Background-position (top, bottom, center, right, left)
+    establecer la posición inicial de una imagen en su contenedor*/
+    background-position: bottom;
+
+    /*Background-attachment (scroll, fixed)
+    se utiliza para wue la imagen quede fija en su contenedor cuando un usuario se desplaza por la página*/
+    background-attachment: fixed;
+
+    /*Propiedades generales de contenedor*/
+    height: 500px;
+    /*width: 300px;*/
+    
+    
+
+}
+
+.fondo2{
+    /* Background: (image) (position) /(size) (attachmnt) (color) */
+    background: url(../imagenes/fnaf3.jpeg) left / contain no-repeat scroll rgb(245, 245, 245) ;
+    width: 800px;
+    height: 500px;
+    border: 2px solid red;
+
+}
