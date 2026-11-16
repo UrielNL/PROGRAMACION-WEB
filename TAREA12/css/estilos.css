@@ -1,0 +1,84 @@
+html{
+font-size: 10px;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 0;
+    font-size: 1em;
+}
+#encabezado{
+    background-color: black;
+    color: green;
+}
+#encabezado h1{
+    text-shadow: 2px 2px 2px darkgoldenrod;
+    text-align: center;
+    font-size: 2em;
+}
+encabezado p{
+font-size: 2em;
+}
+
+.contenedor-enlaces{
+    border: 2px dotted green;
+    background-color: black;
+}
+.enlaces h2{
+    text-shadow: 2px 2px 2px darkorchid;
+    text-align: center;
+    font-size: 4rem;
+}
+.enlaces p{
+    text-align: justify;
+    padding: 5px;
+    color: white;
+}
+/* Orden para los estilos  de los  estados de un enlace
+(LVHA) */
+a:link{
+    color: darkorange;
+    text-decoration: none;
+}
+a:visited{
+    color: aqua;
+    text-decoration: line-through;
+}
+a:focus{
+    background-color: aquamarine;
+    color: blueviolet;
+    border: 2px dotted gold;
+}
+a:hover{
+    font-size: 12px;
+    color: black;
+    background-color: bisque;
+    border: 2px solid blue;
+}
+
+a:active {
+    font-size: 20px;
+    background-color: rebeccapurple;
+    color: black;
+    border: 2px solid red;
+    text-decoration: overline;
+
+}
+
+.enlaces ul{
+    color: antiquewhite;
+    border: 2px solid red;
+    margin: 8px;
+    padding-left:0%;
+}
+
+.enlaces ul li{
+    margin: 8px;
+    border: 2px solid aqua;
+    /* dis decimal circe square lower-roman lower-alpha */
+    list-style: square;
+    list-style-position: inside;
+    
+}
