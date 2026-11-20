@@ -1,0 +1,107 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#encabezado{
+    border: 0.2rem solid pink;
+    font-size: 2rem;
+    height: 55rem;
+}
+
+.logo{
+    border: 0.2rem solid #adff2f;
+    border-radius: 45%;
+    width: 35%;
+    height: 30rem;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+#encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem solid rgb(255, 0, 149);
+}
+#navegacion ul{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+#elementos-posicionados{
+    border: 0.2rem solid rgb(255, 0, 0);
+    padding: 1rem;
+    position: relative;
+    height: 70rem;
+    
+
+}
+.kirby2{
+    border: 0.2rem solid rgb(218, 71, 113);
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+}
+.kirby2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.kirby3{
+    border: 0.2rem solid rgb(218, 71, 113);
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+    position: absolute;
+    z-index: 2;    
+    right: 0rem;
+    top: 0rem;
+
+}
+.kirby3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.kirby4{
+    border: 0.2rem solid rgb(218, 71, 113);
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+
+}
+.kirby4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.kirby5{
+    border: 0.2rem solid rgb(218, 71, 113);
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+      position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+
+
+}
+.kirby5 img{
+    width: 100%;
+    height: 100%;
+}
