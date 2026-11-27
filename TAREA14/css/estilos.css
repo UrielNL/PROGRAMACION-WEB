@@ -10,17 +10,29 @@ body{
 }
 #encabezado{
     border: 0.2rem solid pink;
-    font-size: 20px;
-    position: sticky;
+    font-size: 2rem;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    /* position: sticky;
     z-index: 5;
-    top: 0;
+    top: 0; */
 }
 
 .logo{
     border: 0.2rem solid #adff2f;
     border-radius: 45%;
-    width: 35%;
-    height: 30rem;
+    padding: 0.5rem;
+    width: 70%;
+    height: 70%;
 
 }
 .logo img{
@@ -31,39 +43,59 @@ body{
 #encabezado h1{
     text-align: center;
     text-shadow: 0.2rem solid rgb(255, 0, 149);
-    position: absolute;
+    /* position: absolute;
     top: 5rem;
-    left: 35%;
+    left: 35%; */
 }
 #navegacion ul{
     list-style-type: none;
     border: 0.2rem solid red;
     padding-left: 0;
-    position: absolute;
+    gap: 0.5rem;
+    /* position: absolute;
     top: 4rem;
-    right: 10rem;
+    right: 10rem; */
 }
 #navegacion ul li{
-    display: inline-block;
+    /* display: inline-block; */
 }
-#elementos-posicionados{
+/* #elementos-posicionados{
     border: 0.2rem solid rgb(255, 0, 0);
     padding: 1rem;
     position: relative;
     height: 70rem;
-
-    
-
+} */
+/* #contenedor-felixible{
+    border: 0.2rem solid gold;
+    padding: rem;
+    height: 100%;
+top: 22rem;
+    display: flex vuelve al contenedor felxible; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+} */
+#contenedor-grid{
+    border: 0.2rem solid gold;
+    height: 100rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50rem 50rem ;
+    justify-content: space-between;
+    align-content: end;
+    justify-items: center;
 }
 .kirby2{
-    border: 0.2rem solid rgb(218, 71, 113);
-    width: 30rem;
-    height: 30rem;
-    margin: 0.5rem;
-    position: absolute;
+    border: 0.2rem solid rgb(218, 71, 113); 
+    width: 25rem;
+    height: 25rem;
+    margin: 0.5rem solid red;
+    /* position: absolute;
     z-index: 3;
     top: 0;
-    left: 0;
+    left: 0; */
 
 }
 .kirby2 img{
@@ -72,14 +104,18 @@ body{
 }
 
 .kirby3{
-    border: 0.2rem solid rgb(218, 71, 113);
+   border: 0.2rem solid rgb(218, 71, 113);
+    /* 
     width: 30rem;
     height: 30rem;
     margin: 0.5rem;
     position: absolute;
     z-index: 2;    
     right: 0rem;
-    top: 0rem;
+    top: 0rem; */
+      width: 25rem;
+    height: 25rem;
+    margin: 0.5rem solid red;
 
 }
 .kirby3 img{
@@ -89,12 +125,15 @@ body{
 
 .kirby4{
     border: 0.2rem solid rgb(218, 71, 113);
-    width: 30rem;
+     /* width: 30rem;
     height: 30rem;
     margin: 0.5rem;
     position: absolute;
     left: 0rem;
-    bottom: 0rem;
+    bottom: 0rem; */
+     width: 25rem;
+    height: 25rem;
+    margin: 0.5rem solid red;
 
 }
 .kirby4 img{
@@ -104,14 +143,15 @@ body{
 
 .kirby5{
     border: 0.2rem solid rgb(218, 71, 113);
-    width: 30rem;
+     /* width: 30rem;
     height: 30rem;
     margin: 0.5rem;
       position: absolute;
     right: 0rem;
-    bottom: 0rem;
-
-
+    bottom: 0rem; */
+   width: 25rem;
+    height: 25rem;
+    margin: 0.5rem solid red;
 }
 .kirby5 img{
     width: 100%;
@@ -131,8 +171,21 @@ Moviles (mas de 480px), Tablets(480px-960px), PC(960px-1280px) */
 @media screen and (max-width:1250px) {
     
     #encabezado h1{
-    position: absolute;
-    left: 27%;
+    left: 29%;
     font-size: 2.5rem;
 }
+}
+@media screen and (max-width:1250px) {
+    
+    #encabezado h1{
+    left: 29%;
+    font-size: 2.5rem;
+}
+}
+
+@media screen and (max-width:900px){
+    .logo{
+      width: 35%;
+    height: 30rem;
+    }
 }
